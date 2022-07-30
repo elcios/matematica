@@ -37,19 +37,19 @@
         .grupos-produtos {
             display: flex;
             justify-content: center;
-            background-color:hsl(9,77%,75%);
+            background-color:rgb(26, 184, 14);
             padding: 10px;
         }
 
         /* Bordas de cada grupo de produtos */
         .produto {
-            border-style: dotted;
+            /*border-style: dotted;*/
             border-width: 3px;
             border-color: rgb(80,13,13);
             padding: 10px;
             margin: 20px;
             width: 250px;
-            border-radius: 20px;
+            border-radius: 2px;
         }
 
         /* HOVER troca cor dos links quando cursor está sobre lista (em foco) */
