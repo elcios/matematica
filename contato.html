@@ -4,24 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matemática</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Contato</title>
+    <link href="https://elcios.github.io/matematica/style.css" rel="stylesheet">
     <!--
         CSS no computador: <link rel="stylesheet" type="text/css" href="style.css" /> 
         CSS na internet: <link href="https://elcios.github.io/matematica/style.css" rel="stylesheet">
     -->    
 </head>
 <body>
+    <div class="formulario">
+    <div>
+        <h1 id="titulo"><strong>Contato</strong></h1>
+        <p id="subtitulo">Entre em contato pelo e-mail esilveira@ufmg.br,</p> 
+        <p id="subtitulo">ou deixe sua mensagem abaixo:</p>
+    </div>
     <form action="https://formsubmit.co/elcio.silveira@gmail.com" method="POST">
-        <input type="hidden" name="_next" value="https://elcios.github.io/matematica/sucesso.html" /> <!--mensagem de sucesso no envio-->
-        <input type="hidden" name="_cc" value="elcio.ufmg@gmail.com" /> <!--copia carbono-->
-        <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obrigada pelo contato e logo responderemos!" /> <!--copia carbono-->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Nome" />
-        <input type="email" name="email" placeholder="Email" /> 
-        <input type="text" name="subject" placeholder="Assunto" />
-        <textarea name="message" placeholder="Mensagem"></textarea>
-        <button type="submit">Enviar</button>        
+        <fieldset class="grupo">
+            <div class="formulario">
+                <input type="hidden" name="_next" value="https://elcios.github.io/matematica/sucesso.html" /> <!--mensagem de sucesso no envio-->
+                <!--<input type="hidden" name="_cc" value="elcio.ufmg@gmail.com" />--> <!--copia carbono-->
+                <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obrigada pelo contato e logo responderemos!" /> <!--copia carbono-->
+                <input type="hidden" name="_captcha" value="false">
+                <div class="campo">
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="name" required />
+                </div>
+                <div class="campo">
+                    <label for="email">e-mail: </label>
+                    <input type="email" name="email" required /> 
+                </div>
+                <div class="campo">
+                    <label for="assunto">Assunto: </label>
+                    <input type="text" name="subject" required/>
+                </div>
+                <div class="campo">
+                    <label for="mensagem">Mensagem: </label>
+                    <textarea rows="5" style="width: 26em" id="mensagem" name="message" required></textarea>
+                </div class="botao">
+                <button type="submit" class="btn">Enviar</button>    
+            </div>
+        </fieldset>    
     </form>
+    </div>
+
+
+
+
+
+
 </body>
 </html>
