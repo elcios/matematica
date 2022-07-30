@@ -1,0 +1,68 @@
+        /* Classe "dropbtn"formata estilo do botão do menu lista suspensa */
+        .dropbtn {
+            background-color: #080808; /* Cor do fundo do botão */
+            color: white; /* cor */
+            padding: 16px;
+            min-width: 300px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Classe "dropdown" é usada no contêiner <div> p/ posicionar a lista */
+        .dropdown  {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Classe "dropdown-content", conteúdo suspenso, escondido por padrão */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 300px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Classe "dropdown-content a" formata os links na lista suspensa */
+        .dropdown-content a {
+            color: rgb(2, 2, 2);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Conteúdo da página classe dos grupos de produtos */
+        .grupos-produtos {
+            display: flex;
+            justify-content: center;
+            background-color:hsl(9,77%,75%);
+            padding: 10px;
+        }
+
+        /* Bordas de cada grupo de produtos */
+        .produto {
+            border-style: dotted;
+            border-width: 3px;
+            border-color: rgb(80,13,13);
+            padding: 10px;
+            margin: 20px;
+            width: 250px;
+            border-radius: 20px;
+        }
+
+        /* HOVER troca cor dos links quando cursor está sobre lista (em foco) */
+        .dropdown-content a:hover {
+            background-color: #26b9d3
+        }
+
+        /* HOVER mostra menu suspenso quando cursor está sobre ele (em foco) */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Troca cor do botão de lista suspensa quando lista é apresentada */
+        .dropdown:hover .dropbtn {
+            background-color: #5daf5a;
+        }
